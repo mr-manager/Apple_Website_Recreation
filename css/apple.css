@@ -1,0 +1,588 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+.my-body {
+    background-color: #fff;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+.section-1, .section-2, .section-3 {
+    line-height: 150%;
+}
+
+.section-4 {
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background: rgba(45,45,45,0.98);
+    width: 100%;
+    z-index: 123;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar a img {
+    vertical-align: middle;
+}
+
+.spacer {
+    margin-bottom: 12px;
+    text-align: center;
+    background-color: #fafafa;
+}
+
+.xr-deal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.call-to-action a {
+    margin: 10px;
+    text-decoration: none;
+    color: #0070C9;
+    font-size: 18px;
+}
+
+.xr-deal h3, .xr h3, .xs h3, .card h3 {
+    font-size: 18px;
+    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-weight: 400;
+    margin: 5px 0 15px 0;
+}
+
+.news, .tv, .arcade, .music {
+    color: #fff;
+}
+
+.news a, .tv a, .arcade a, .music a {
+    color: #fff;
+}
+
+.news-logo {
+    height: 25px;
+}
+
+.flex-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 200px;
+}
+
+.asterix {
+    font-size: 12px;
+    padding-bottom: 15px;
+    color: #888888;
+}
+
+.asterix a {
+    text-decoration: none;
+    color: #0070C9;
+}
+
+.column h4 {
+    font-size: 12px;
+    font-weight: 300;
+    padding: 10px;
+}
+
+.space-between {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.in-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.in-block img {
+    width: 16px;
+    height: 16px;
+    padding-right: 5px;
+}
+
+.in-block a {
+    text-decoration: none;
+    color: #555555;
+}
+
+.try a {
+    font-size: 12px;
+    padding-bottom: 15px;
+    color: #888888;
+}
+
+.inline-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: top;
+}
+
+.inline-menu a {
+    border-right: lightgray 1px solid;
+    text-decoration: none;
+}
+
+.inline-menu a:last-child {
+    border: none;
+}
+
+@media screen and (max-width: 735px) {
+
+    .hide-on-small {
+        display: none;
+    }
+
+    .navbar {
+        justify-content: space-between;
+        height: 48px;
+    }
+
+    .navbar a {
+        margin: 0 18px;
+    }
+    
+    .xr-deal {
+        margin-top: 48px;
+        height: 250px;
+        line-height: 150%;
+    }
+
+    .xr-deal h2 {
+        font-weight: 500;
+    }
+    .xr-deal h3 {
+        max-width: 60%;
+    }
+
+    .xr-deal h3, .xr h3, .xs h3, .card h3 {
+        max-width: 90%;
+    }
+
+    .logo {
+        height: 23px;
+    }
+
+    .logo2 {
+        height: 32px;
+    }
+
+    .xr {
+        height: 500px;
+        position: relative;
+    }
+
+    .res-xr {
+        background-image: url(../img/xr-sm.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 279px;
+        height: 351px;
+        margin: auto;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    
+    .xs {
+        height: 500px;
+        position: relative;
+    }
+
+    .res-xs {
+        background-image: url(../img/xs-sm.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 220px;
+        height: 309px;
+        margin: auto;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .card {
+        height: 500px;
+        position: relative;
+    }
+
+    .res-card {
+        background-image: url(../img/card-sm.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 500px;
+        height: 300px;
+        margin: auto;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .news {
+        height: 500px;
+        position: relative;
+        background-image: url(../img/news-sm.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        
+    }
+
+    .news h3, .tv h3, .arcade h3, .music h3 {
+        font-weight: 300;
+        max-width: 48%;
+    }
+
+    .tv {
+        height: 500px;
+        position: relative;
+        background-image: url(../img/tv-sm.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .arcade {
+        height: 500px;
+        position: relative;
+        background-image: url(../img/arcade-sm.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .music {
+        height: 500px;
+        position: relative;
+        background-image: url(../img/music-sm.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .watch {
+        height: 500px;
+        position: relative;
+        background-image: url(../img/watch-sm.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .airpods {
+        height: 500px;
+        position: relative;
+        background-image: url(../img/airpods-sm.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    hr {
+        height: 1px;
+        background-color: #888888;
+    }
+
+    .inline-menu {
+        align-items: center;
+    }
+
+    .inline-menu a {
+        padding: 5px;
+    }
+
+    .inline-menu a:last-child {
+        border: none;
+    }
+
+}
+
+@media screen and (min-width: 736px) {
+
+    .hide-on-big {
+        display: none;
+    }
+    
+    .navbar {
+        justify-content: space-around;
+        height: 44px;
+        font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+    }
+    
+    .xr-deal {
+        margin-top: 44px;
+        height: 225px;
+    }
+    
+    .smaller {
+        font-size: 26px;
+    }
+    
+    .xr-deal h2 {
+        font-weight: 400;
+        font-size: 34px;
+    }
+    
+    .xr-deal h3 {
+        max-width: 45%;
+        font-weight: 400;
+    }
+    
+    .xr h3, .xs h3 {
+        max-width: 50%;
+    }
+    
+    .card h3 {
+        max-width: 28%;
+    }
+    
+    .logo {
+        height: 28px;
+    }
+    
+    .logo2 {
+        height: 38px;
+    }
+    
+    .xr {
+        height: 650px;
+        position: relative;
+    }
+    
+    .res-xr {
+        background-image: url(../img/xr-lg.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 622px;
+        height: 352px;
+        margin: auto;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    
+    .xs {
+        height: 650px;
+        position: relative;
+    }
+    
+    .res-xs {
+        background-image: url(../img/xs-lg.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 774px;
+        height: 313px;
+        margin: auto;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    
+    .card {
+        height: 650px;
+        position: relative;
+    }
+    
+    .res-card {
+        background-image: url(../img/card-lg.jpg);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: 300%;
+        width: 961px;
+        height: 468px;
+        margin: auto;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    
+    .two-boxes {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin: 12px;
+    }
+    
+    .news {
+        height: 450px;
+        width: 450px;
+        position: relative;
+        background-image: url(../img/news-sm.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    
+    .news h3, .tv h3, .arcade h3, .music h3 {
+        font-weight: 300;
+        max-width: 55%;
+    }
+    
+    .tv {
+        height: 450px;
+        width: 450px;
+        position: relative;
+        background-image: url(../img/tv-sm.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .tv-logo, .arcade-logo, .music-logo {
+        height: 25px;
+    }
+    
+    .watch-logo {
+        height: 44px;
+    }
+    
+    .arcade {
+        height: 450px;
+        width: 450px;
+        position: relative;
+        background-image: url(../img/arcade-sm.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .music {
+        height: 450px;
+        width: 450px;
+        position: relative;
+        background-image: url(../img/music-sm.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .watch {
+        height: 450px;
+        width: 450px;
+        position: relative;
+        background-image: url(../img/watch-sm.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .airpods {
+        height: 450px;
+        width: 450px;
+        position: relative;
+        background-image: url(../img/airpods-sm.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .column {
+        width: 20%;
+        display: inline-block;
+        padding: 5px 0;
+        font-size: smaller;
+        line-height: 200%; 
+    }
+    
+    .column a {
+        display: block;
+        text-decoration: none;
+        color: #555555;
+        
+    }
+    
+    hr {
+        display: block;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        margin-left: auto;
+        margin-right: auto;
+        border-style: inset;
+        border-width: 0.5px;
+        border-color: #85858571;
+    }
+    
+    .wrapper2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: top;
+    }
+    
+    .try {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    
+    .inline-menu {
+        align-items: top;
+    }
+    
+    .inline-menu a {
+        margin-right: 5px;
+        padding-right: 5px;
+    }
+    
+    .inline-menu a:last-child {
+        border: none;
+    }
+    
+    .flag {
+        width: 16px;
+        height: 16px;
+    }
+    
+    .inline-and-center {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .inline-and-center a {
+        text-decoration: none;
+        padding: 5px;
+    }
+    
+    .inline-and-center img {
+        vertical-align: middle;
+    }
+}
+
